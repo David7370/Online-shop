@@ -206,10 +206,26 @@ function createProductCard(product) {
 
 function handleSearch() {
     const searchInput = document.getElementById("searchInput");
-    const searchQuery = searchInput.value;
+    const searchQuery = searchInput.value.trim().toLowerCase(); // Convert search query to lowercase for case-insensitive search
     const priceRangeInput = document.getElementById("priceRange");
     const selectedPrice = parseInt(priceRangeInput.value);
     displayProducts(searchQuery, selectedPrice);
+}
+
+function displayProducts(searchQuery = '', maxPrice = Infinity) {
+    productsSection.innerHTML = '';
+
+    const filteredProducts = products.filter(product => {
+        
+        const matchesSearch = product.name.toLowerCase().includes(searchQuery);
+        const withinPriceRange = product.price <= maxPrice;
+        return matchesSearch && withinPriceRange;
+    });
+
+    filteredProducts.forEach(product => {
+        const productCard = createProductCard(product);
+        productsSection.appendChild(productCard);
+    });
 }
 
 document.getElementById("searchInput").addEventListener("input", handleSearch);
