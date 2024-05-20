@@ -129,16 +129,6 @@ main {
 
 }
 
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-
-@media (min-width: 992px) {
-
-}
-
 .fancy-header {
     background-color: #000000;
     color: #fff;
@@ -272,59 +262,3 @@ footer {
     top: 0px;
 }
 
-@media (max-width: 767px) {
-    
-    .header-content {
-        padding: 10px; 
-    }
-
-    .search-cart-container {
-        flex-direction: column; 
-        align-items: center; 
-        margin-top: 10px; 
-    }
-
-    .cartimage,
-    .new {
-        margin-top: 10px; 
-    }
-
-    #searchInput {
-        width: calc(100% - 40px); 
-    }
-
-    .price-range-container {
-        left: 10px; 
-    }
-
-    .category-nav ul {
-        flex-wrap: wrap; 
-        justify-content: center; 
-    }
-
-    .category-nav li {
-        margin: 5px; 
-    }
-
-    .footer-container {
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    .footer-column {
-        padding: 0; 
-        margin-bottom: 20px; 
-    }
-
-    .social-icons {
-        margin-top: 10px; 
-    }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    
-}
-
-@media (min-width: 992px) {
-    
-}
