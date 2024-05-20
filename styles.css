@@ -8,18 +8,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
     background-color: #f56c04;
     color: #fff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     position: relative; 
 }
 
 main {
-    padding: 20px;
+    padding: 10px;
 }
 
 .product-card {
@@ -269,4 +270,61 @@ footer {
     width: 200px;
     height: auto;
     top: 0px;
+}
+
+@media (max-width: 767px) {
+    
+    .header-content {
+        padding: 10px; 
+    }
+
+    .search-cart-container {
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 10px; 
+    }
+
+    .cartimage,
+    .new {
+        margin-top: 10px; 
+    }
+
+    #searchInput {
+        width: calc(100% - 40px); 
+    }
+
+    .price-range-container {
+        left: 10px; 
+    }
+
+    .category-nav ul {
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+
+    .category-nav li {
+        margin: 5px; 
+    }
+
+    .footer-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .footer-column {
+        padding: 0; 
+        margin-bottom: 20px; 
+    }
+
+    .social-icons {
+        margin-top: 10px; 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    
+}
+
+@media (min-width: 992px) {
+    
 }
