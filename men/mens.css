@@ -22,13 +22,21 @@ main {
     padding: 20px;
 }
 
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .product-card {
     border: 2px solid #ccc; 
     border-radius: 8px;
     padding: 10px;
     margin: 10px;
     width: 200px; 
-    display: inline-block;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -234,3 +242,16 @@ footer {
     font-size: 20px;
 }
 
+.back-button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #333333;
+}

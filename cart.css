@@ -242,3 +242,16 @@ footer {
     font-size: 20px;
 }
 
+.back-button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.back-button:hover {
+    background-color: #333333;
+}

@@ -45,3 +45,8 @@ function removeFromCart(productId) {
 window.onload = () => {
     displayCartItems();
 };
+
+function goBack() {
+    window.history.back();
+}
+
